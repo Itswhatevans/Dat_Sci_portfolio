@@ -115,5 +115,5 @@ You should demonstrate strong Markdown technique:
 - Readable paragraph structure
 - Proper image syntax with alt text
 
-You do **not** need to use LaTeX, tables, or code blocks for this assignment
+
 
