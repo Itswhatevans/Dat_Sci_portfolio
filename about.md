@@ -97,19 +97,11 @@ Fun Facts
 - Youngest of six kids
 - I was admitted to BYU three times
 
-### Image (required)
-
+### Image
+![Headshot:](C:/Users/jorda/OneDrive/Pictures/Saved Pictures/DavisFam-41.JPG)
 Include at least one image (headshot or personal photo)
 - Use proper markdown image syntax
 - Include descriptive alt text
-
-## Formatting expecations
-
-You should demonstrate strong Markdown technique:
-- Clear heading hierarchy
-- Intentional use of lists
-- Readable paragraph structure
-- Proper image syntax with alt text
 
 
 
