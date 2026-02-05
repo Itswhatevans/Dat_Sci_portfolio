@@ -2,34 +2,8 @@
 title: "About Me"
 ---
 
-### Technical Skills
-- **Programming**: Python
-- **Data Analysis**: Pandas, NumPy
-- **Visualization**: Matplotlib, Seaborn
-- **Machine Learning**: Scikit-learn
-- **Tools**: Jupyter Notebooks, Git/GitHub
-
-### Areas of Interest
-- [Your specific interests, e.g., environmental data, healthcare analytics, finance, etc.]
-- [Other areas you're curious about]
-
-## Goals
-
-Describe what you hope to achieve through your data science journey:
-
-- Short-term learning objectives
-- Long-term career aspirations
-- Types of problems you want to solve
-
-## Contact
-
-- **Email**: your.email@example.com
-- **GitHub**: [github.com/your-username](https://github.com/your-username)
-- **LinkedIn**: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
 
 ---
-
-*This portfolio showcases my learning progress and projects completed during my data science studies.*
 
 # Hello! I'm Jordan
 
@@ -39,23 +13,23 @@ Excited to be part of the growing data science and machine learning fields, I co
 Years of experience and training in the field of door-to-door Sales and Network Marketing gave me the skills and attributes necessary to cultivate quality client relations, communicate clearly, and bring optimism and positivity to my workplace. I consistently strive toward self improvement and can apply my intellect and ethic to any task. 
 It is said that 90% of workplaces desire sales skills/sales experience, but less than 10% of workers possess those skills.
 
-Statistics major, Data Science Emphasis, Senior, interest in Machine Learning, Neural Networks, creative business solutions. 
+Statistics major, Data Science Emphasis, Senior, interest in Machine Learning, Neural Networks, creative business solutions, agentic AI. 
 
 
 ### Education
 
 - Brigham Young University
-- Bachelor's of Science, Statistics
+- Bachelor's of Applied Science, Statistics
 - April, 2026
 
 ### Experience
-Include relevant experiences such as 
-- Jobs
+- Data Analyst, TELUS International AI Data Solutions. 
+   - Analysts for TELUS International assist in training AI. A specific rating system is given for analysts to apply to various queries and usage cases. Combining responsibilities for discerning best ratings with adhesion to high quality standards, analysts must process queries to make the AI more accurate and useful.
 
 #### Internship:
 
 Assessment Team, Office of Belonging, BYU
-- Working in tools like MAXQDA, Excel, Power BI, and R, analyze non-ordinal survey data to extract insight from focus groups and student demographics to improve outreach and further the mission of the office.
+- Working in tools like MAXQDA, Excel, Power BI, and R, analyzed non-ordinal and unstructured survey data to extract insight from focus groups and student demographics, improving outreach and furthering the mission of the office.
 
 #### Major Projects
 What affects NBA draft chances? - Group Research Project,	Fall 2024
@@ -68,19 +42,41 @@ Do Wash Cycles affect clothing shrinkage? - Group Research Project, Winter 2024
 - _Experiment Design, Collection of Data, Statistical Modeling_
 - Designed and conducted a controlled experiment with 3 fabric types across different wash cycles
 - Analyzed shrinkage patterns using R and Tableau; visualized trends and presented findings in class
-- Demonstrated measurable though minor impact of wash cycle settings on shrinkage, even with pre-shrunk fabrics
-
+- Demonstrated measurable though impact of wash cycle settings on shrinkage, even with pre-shrunk fabrics
 
 ### Skills
-Programming Languages:
+#### Programming Languages:
 - R, Python, SQL, HTML/CSS, C++, VBA
 
-
-Tools and Technologies
+#### Tools and Technologies
 - NumPy, Pandas, Sci-Kit Learn, Tidyverse, NoSQL, Linux, Tableau, Power BI, MAXQDA, Excel
 
-Technical and Soft skills
+#### Technical and Soft skills
 - Data wrangling, data visualization, statistical analysis, multiple regression, linear models, logistic regression, machine learning, linear algebra, hypothesis testing, agentic AI
+
+### Areas of Interest
+- Data Pipelines
+- AutoML
+- Machine Learning Algorithms
+- Data Visualization
+- Multiple Regression Analysis
+
+## Goals
+
+Describe what you hope to achieve through your data science journey:
+
+- Short term:
+    - Improved, robust project portfolio, proof of concept for job marketability
+- Long-term career aspirations
+    - Expertise in AutoML, Agentic AI, ML algorithms
+- Types of problems I want to solve
+    - Predictive analytics, Geospacial data analysis, Time series analysis.
+
+## Contact
+
+- **Email**: jtevans9@byu.edu
+- **GitHub**: https://github.com/Itswhatevans
+- **LinkedIn**: https://linkedin.com/in/jordantevans
 
 ### Get to Know Me
 
