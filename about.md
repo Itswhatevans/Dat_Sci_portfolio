@@ -1,10 +1,3 @@
----
-title: "About Me"
----
-
-
----
-
 # Hello! I'm Jordan
 
 ### Get to Know Me 
@@ -99,9 +92,7 @@ Fun Facts
 
 ### Image
 ![Headshot:](C:/Users/jorda/OneDrive/Pictures/Saved Pictures/DavisFam-41.JPG)
-Include at least one image (headshot or personal photo)
-- Use proper markdown image syntax
-- Include descriptive alt text
+
 
 
 
