@@ -82,6 +82,7 @@ Hobbies
 - Social dance
 - Video games
 
+
 Interests
 - Music
 - Movies
@@ -95,7 +96,7 @@ Fun Facts
 - I was admitted to BYU three times
 
 ### Image
-![Headshot:](C:/Users/jorda/Pictures/DavisFam-41.JPG)
+![Headshot:](images/headshot.JPG)
 
 
 
