@@ -1,3 +1,7 @@
+---
+title: "About Me"
+---
+
 # Hello! I'm Jordan
 
 ### Get to Know Me 
@@ -91,8 +95,7 @@ Fun Facts
 - I was admitted to BYU three times
 
 ### Image
-![Headshot:](C:/Users/jorda/OneDrive/Pictures/Saved Pictures/DavisFam-41.JPG)
-
+![Headshot:](C:/Users/jorda/Pictures/DavisFam-41.JPG)
 
 
 
