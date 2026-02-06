@@ -24,7 +24,10 @@
     "href": "projects/eda.html",
     "title": "",
     "section": "",
-    "text": "Code"
+    "text": "Code",
+    "crumbs": [
+      "eda.html"
+    ]
   },
   {
     "objectID": "index.html",
@@ -80,13 +83,19 @@
     "href": "projects/data-acquisition.html",
     "title": "",
     "section": "",
-    "text": "Code"
+    "text": "Code",
+    "crumbs": [
+      "data-acquisition.html"
+    ]
   },
   {
     "objectID": "projects/final-project.html",
     "href": "projects/final-project.html",
     "title": "",
     "section": "",
-    "text": "Code"
+    "text": "Code",
+    "crumbs": [
+      "final-project.html"
+    ]
   }
 ]

@@ -36,9 +36,9 @@ website:
     - title: "Projects"
       contents:
         - projects/index.md
-        - projects/eda.qmd
-        - projects/data-acquisition.qmd
-        - projects/final-project.qmd
+        - projects/eda.md
+        - projects/data-acquisition.md
+        - projects/final-project.md
 
 format:
   html:
