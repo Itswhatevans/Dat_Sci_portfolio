@@ -96,7 +96,5 @@ Fun Facts
 - I was admitted to BYU three times
 
 ### Image
-![Headshot:](docs/images/headshot.JPG){width=50%}
-
-
+![Headshot:](docs/images/headshot.JPG){width=200px}
 
