@@ -29,7 +29,7 @@ website:
       - text: "Blogs"
         menu:
           - text: "Blog Tutorial"
-            href: blog-tutorial.md
+            href: blogs/blog-tutorial.md
     right:
       - icon: github
         href: https://github.com/your-username
