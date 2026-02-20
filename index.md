@@ -2,7 +2,7 @@
 title: "Welcome to My Data Science Portfolio"
 ---
 
-# Hello! I'm [Your Name] 👋
+# Hello! I'm Jordan 👋
 
 Welcome to my data science portfolio! This site shows my journey learning data science and analytics. Here you'll find projects that demonstrate what I've learned and discovered.
 
@@ -18,10 +18,10 @@ I built this site using [Quarto](https://quarto.org/) and host it on [GitHub Pag
 
 ## 🛠️ Skills I'm Learning
 
-- **Programming**: Python, Pandas for data analysis
-- **Visualization**: Creating charts with Matplotlib and Seaborn
+- **Programming**: Python for data analysis and structures, R for statistical data analysis, etc.
+- **Visualization**: Creating charts with Matplotlib, Seaborn, Power BI, and Tableau
 - **Data Collection**: Getting data from files, websites, and APIs
-- **Analysis**: Finding patterns and answering questions with data
+- **Analysis**: Finding patterns and answering questions with data which I've tidied and wrangled.  
 
 ## 📈 My Projects
 
