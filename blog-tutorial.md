@@ -1,21 +1,22 @@
-# Hello! I'm Jordan 👋
+# __Welcome to my Data Science Portfolio__
+# __Hello! I'm Jordan__ 👋
 Welcome to my Data Science portfolio! This site shows my journey learning data science and analystics. Here you'll find projects that demonstrate what I've learned and discovered. 
 
-## 🎓 About This Portfolio 
+## 🎓 __About This Portfolio__ 
 This portfolio shows my work learning data science. Each project includes:
 - My code with documentation
 - Visualizations I created
 - What I learned and discovered
 
-I built this site using Quarto and host it on GitHub Pages
+I built this site using [Quarto]() and host it on [GitHub Pages]()
 
-## 🛠️ Skills I'm learning 
-- Programming: Python for data analysis and structures, R for statistical data analysis, 
+## 🛠️ __Skills I'm Learning__
+- Programming: Python for data analysis and structures, R for statistical data analysis, etc.
 - Visualization: Creating charts with Matplotlib, Seaborn, Power BI, and Tableau
 - Data Collection: Getting data from files, websites, and APIs
 - Analysis: Finding patterns and answering questions with data which I've tidied and wrangled.
 
-# 📈 My Projects
+# 📈 __My Projects__
 ## [Data Exploration Project]()
 Learn how I explore datasets to find interesting patterns and answer questions
 ## [Data Collection Project]()
