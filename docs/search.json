@@ -81,30 +81,44 @@
   {
     "objectID": "blogs/blog-tutorial.html",
     "href": "blogs/blog-tutorial.html",
-    "title": "How to",
+    "title": "Blog Tutorial",
     "section": "",
-    "text": "Describe the problem you’re solving and why it matters"
+    "text": "Have you ever been given a dataset and quickly found it to so messy you couldn’t even analyzy it? We’ll be examining how to use the Pandas package in Python to tackle and wrangle a dataset.\n\n\n\n\n\n\n\n\n\n\n\n\n\nStudentName\nMajor\nGradYear\nGPA\nInternship?\nHoursWorked\n\n\n\n\nAlice Smith\nstatistics\n2026\n3.8\nYes\n12\n\n\nbob jones\nData Sci\n2025\n3.45\nyes\n15\n\n\nCAROL LEE\nSTATISTICS\n2026\nNaN\nNo\n8\n\n\nDavid Kim\ndata science\n2024\n3.92\nNo\nNaN\n\n\nEva Brown\nStats\n2025\n3.6\nYES\n20\n\n\n\n\nNotice the inconsistencies in the varying cell values. What can you see right away that could pose problems? ### Here are the issues that need fixing:\nInconsistent capitalization\nColumn names that don’t follow “snake_case”\nMixed Boolean values (Yes, YES, yes)\nMissing values\nAbbreviated Categories\nA column we might remove later"
   },
   {
     "objectID": "blogs/blog-tutorial.html#introduction",
     "href": "blogs/blog-tutorial.html#introduction",
-    "title": "How to",
+    "title": "Blog Tutorial",
     "section": "",
-    "text": "Describe the problem you’re solving and why it matters"
+    "text": "Have you ever been given a dataset and quickly found it to so messy you couldn’t even analyzy it? We’ll be examining how to use the Pandas package in Python to tackle and wrangle a dataset.\n\n\n\n\n\n\n\n\n\n\n\n\n\nStudentName\nMajor\nGradYear\nGPA\nInternship?\nHoursWorked\n\n\n\n\nAlice Smith\nstatistics\n2026\n3.8\nYes\n12\n\n\nbob jones\nData Sci\n2025\n3.45\nyes\n15\n\n\nCAROL LEE\nSTATISTICS\n2026\nNaN\nNo\n8\n\n\nDavid Kim\ndata science\n2024\n3.92\nNo\nNaN\n\n\nEva Brown\nStats\n2025\n3.6\nYES\n20\n\n\n\n\nNotice the inconsistencies in the varying cell values. What can you see right away that could pose problems? ### Here are the issues that need fixing:\nInconsistent capitalization\nColumn names that don’t follow “snake_case”\nMixed Boolean values (Yes, YES, yes)\nMissing values\nAbbreviated Categories\nA column we might remove later"
   },
   {
-    "objectID": "blogs/blog-tutorial.html#body",
-    "href": "blogs/blog-tutorial.html#body",
-    "title": "How to",
-    "section": "Body:",
-    "text": "Body:\nStep-by-step explanations, examples, and demonstractions"
+    "objectID": "blogs/blog-tutorial.html#pattern-overview",
+    "href": "blogs/blog-tutorial.html#pattern-overview",
+    "title": "Blog Tutorial",
+    "section": "Pattern Overview:",
+    "text": "Pattern Overview:\n\nStandardize column names\nFix capitalization inconsistencies\nConvert data types\nRemove unnecessary columns\nHandle missing values\nAdd a clean index column"
+  },
+  {
+    "objectID": "blogs/blog-tutorial.html#hit-em-with-this",
+    "href": "blogs/blog-tutorial.html#hit-em-with-this",
+    "title": "Blog Tutorial",
+    "section": "Hit ’em with this!",
+    "text": "Hit ’em with this!\n\nFirst we need some data:\nimport pandas as pd\n\n# Use pd.DataFrame()\ndf = pd.DataFrame({\n    \"StudentName\": [\"Alice Smith\", \"bob jones\", \"CAROL LEE\", \n    \"David Kim\", \"Eva Brown\"],\n    \"Major\": [\"statistics\", \"Data Sci\", \"STATISTICS\", \n    \"data science\", \"Stats\"],\n    \"GradYear\": [2026, 2025, 2026, 2024, 2025],\n    \"GPA\": [3.8, 3.45, None, 3.92, 3.6],\n    \"Internship?\": [\"Yes\", \"yes\", \"No\", \"No\", \"YES\"],\n    \"HoursWorked\": [12, 15, 8, None, 20]\n})\n\n\nStep 1: Clean up the Column Names\n# Use the Pandas '.rename()' method\ndf = df.rename(columns={\n    \"StudentName\": \"student_name\",\n    \"Major\": \"major\",\n    \"GradYear\": \"grad_year\",\n    \"GPA\": \"gpa\",\n    \"Internship?\": \"internship\",\n    \"HoursWorked\": \"hours_worked\"\n})\n\n\nStep 2: Standardize Text Values\n# Use 'str.title()', 'str.lower()' to standardize:\ndf[\"student_name\"] = df[\"student_name\"].str.title()\ndf[\"major\"] = df[\"major\"].str.lower()\ndf[\"internship\"] = df[\"internship\"].str.lower()\n\n\nStep 2a: Standardize Majors\n# Pandas '.replace()' method is great here, just put the column name in the [] brackets and add the current name before the colon \":\" with the desired new value after the colon \":\".\ndf[\"major\"] = df[\"major\"].replace({\n    \"data sci\": \"data science\",\n    \"stats\": \"statistics\"\n})\n\n\nStep 3: Convert Data Types\n# We're going to remap how we display whether students completed an internship to the established standard:\ndf[\"internship\"] = df[\"internship\"].map({\n    \"yes\": True,\n    \"no\": False\n})\n# Fun Fact: Boolean values are very versatile and can be utilized in other functions without having to encode 'yes' and 'no' into queries.\n# Next, we specify graduation year as integers:\ndf[\"grad_year\"] = df[\"grad_year\"].astype(int)\n\n\nStep 4: Handle Missing Values\n# Drop rows where GPA is missing:\n#   **We do this for datasets that are large enough to afford a few missing observations for other columns.**\ndf = df.dropna(subset=[\"gpa\"])\n\n# In other cases, we can translate missing values to a something more useful, like hours worked:\ndf[\"hours_worked\"] = df[\"hours_worked\"].fillna(0)\n\n\nStep 5: Remove Unnecessary Columns\n# OR: If we decide the whole column isn't useful, we can drop it:\ndf = df.drop(columns=[\"hours_worked\"])\n\n\nStep 6: Add a Clean Index Column;\n# If some of our analyses require tracking each row, it can be useful if their indices are displayed as their own column:\ndf = df.reset_index(drop=True)\ndf.insert(0, \"student_id\", range(1, len(df) + 1))"
+  },
+  {
+    "objectID": "blogs/blog-tutorial.html#your-final-table-should-look-something-like-this",
+    "href": "blogs/blog-tutorial.html#your-final-table-should-look-something-like-this",
+    "title": "Blog Tutorial",
+    "section": "Your Final Table Should Look Something Like This:",
+    "text": "Your Final Table Should Look Something Like This:\n\n\n\nstudent_id\nstudent_name\nmajor\ngrad_year\ngpa\ninternship\n\n\n\n\n1\nAlice Smith\nstatistics\n2026\n3.8\nTrue\n\n\n2\nBob Jones\ndata science\n2025\n3.45\nTrue\n\n\n3\nDavid Kim\ndata science\n2024\n3.92\nFalse\n\n\n4\nEva Brown\nstatistics\n2025\n3.6\nTrue"
   },
   {
     "objectID": "blogs/blog-tutorial.html#conclusion-and-call-to-action",
     "href": "blogs/blog-tutorial.html#conclusion-and-call-to-action",
-    "title": "How to",
+    "title": "Blog Tutorial",
     "section": "Conclusion and Call to Action",
-    "text": "Conclusion and Call to Action\nSummarize the key ideas and tell the reader what to do next. Examples: - Try the code on their own data - Apply the workflow to a new example - Explore a related tool or extension"
+    "text": "Conclusion and Call to Action\nTry applying this 6-step workflow to your own messy CSV file. What patterns repeat? What new cleaning rules do you need? Data cleaning is less about memorizing commands and more about building repeatable structure.\nNext time you open a messy dataset, try asking: 1. Are the column names consistent? 2. Are categories standardized? 3. Are data types correct? 4. What missing values matter?\n\nThanks for joining me on this tutorial! Check back regularly for more coding tips!"
   },
   {
     "objectID": "projects/data-acquisition.html",

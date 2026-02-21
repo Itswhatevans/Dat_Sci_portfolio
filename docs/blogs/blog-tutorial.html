@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jordan Evans">
+<meta name="dcterms.date" content="2026-02-20">
 
-<title>How to – Your Name - Data Science Portfolio</title>
+<title>Blog Tutorial – Your Name - Data Science Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -144,7 +146,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="../projects/index.html">
  <span class="dropdown-text">All Projects</span></a>
   </li>  
-        <li><hr class="dropdown-divider"></li>
         <li>
     <a class="dropdown-item" href="../projects/eda.qmd">
  <span class="dropdown-text">Exploratory Data Analysis</span></a>
@@ -198,9 +199,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><strong>Introduction:</strong></a></li>
-  <li><a href="#body" id="toc-body" class="nav-link" data-scroll-target="#body"><strong>Body:</strong></a></li>
-  <li><a href="#conclusion-and-call-to-action" id="toc-conclusion-and-call-to-action" class="nav-link" data-scroll-target="#conclusion-and-call-to-action"><strong>Conclusion and Call to Action</strong></a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><strong>Introduction:</strong></a>
+  <ul class="collapse">
+  <li><a href="#imagine-you-have-this-data-here" id="toc-imagine-you-have-this-data-here" class="nav-link" data-scroll-target="#imagine-you-have-this-data-here">Imagine you have this data here:</a></li>
+  </ul></li>
+  <li><a href="#pattern-overview" id="toc-pattern-overview" class="nav-link" data-scroll-target="#pattern-overview">Pattern Overview:</a></li>
+  <li><a href="#hit-em-with-this" id="toc-hit-em-with-this" class="nav-link" data-scroll-target="#hit-em-with-this"><strong>Hit ’em with this!</strong></a>
+  <ul class="collapse">
+  <li><a href="#first-we-need-some-data" id="toc-first-we-need-some-data" class="nav-link" data-scroll-target="#first-we-need-some-data">First we need some data:</a></li>
+  <li><a href="#step-1-clean-up-the-column-names" id="toc-step-1-clean-up-the-column-names" class="nav-link" data-scroll-target="#step-1-clean-up-the-column-names">Step 1: Clean up the Column Names</a></li>
+  <li><a href="#step-2-standardize-text-values" id="toc-step-2-standardize-text-values" class="nav-link" data-scroll-target="#step-2-standardize-text-values">Step 2: Standardize Text Values</a></li>
+  <li><a href="#step-2a-standardize-majors" id="toc-step-2a-standardize-majors" class="nav-link" data-scroll-target="#step-2a-standardize-majors">Step 2a: Standardize Majors</a></li>
+  <li><a href="#step-3-convert-data-types" id="toc-step-3-convert-data-types" class="nav-link" data-scroll-target="#step-3-convert-data-types">Step 3: Convert Data Types</a></li>
+  <li><a href="#step-4-handle-missing-values" id="toc-step-4-handle-missing-values" class="nav-link" data-scroll-target="#step-4-handle-missing-values">Step 4: Handle Missing Values</a></li>
+  <li><a href="#step-5-remove-unnecessary-columns" id="toc-step-5-remove-unnecessary-columns" class="nav-link" data-scroll-target="#step-5-remove-unnecessary-columns">Step 5: Remove Unnecessary Columns</a></li>
+  <li><a href="#step-6-add-a-clean-index-column" id="toc-step-6-add-a-clean-index-column" class="nav-link" data-scroll-target="#step-6-add-a-clean-index-column">Step 6: Add a Clean Index Column;</a></li>
+  </ul></li>
+  <li><a href="#your-final-table-should-look-something-like-this" id="toc-your-final-table-should-look-something-like-this" class="nav-link" data-scroll-target="#your-final-table-should-look-something-like-this">Your Final Table Should Look Something Like This:</a></li>
+  <li><a href="#conclusion-and-call-to-action" id="toc-conclusion-and-call-to-action" class="nav-link" data-scroll-target="#conclusion-and-call-to-action"><strong>Conclusion and Call to Action</strong></a>
+  <ul class="collapse">
+  <li><a href="#thanks-for-joining-me-on-this-tutorial-check-back-regularly-for-more-coding-tips" id="toc-thanks-for-joining-me-on-this-tutorial-check-back-regularly-for-more-coding-tips" class="nav-link" data-scroll-target="#thanks-for-joining-me-on-this-tutorial-check-back-regularly-for-more-coding-tips">Thanks for joining me on this tutorial! Check back regularly for more coding tips!</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -209,14 +228,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">How to</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
-</div>
+<div class="quarto-title-block"><div><h1 class="title">Blog Tutorial</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Data Science</div>
+    <div class="quarto-category">Quarto</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jordan Evans </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 20, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -228,19 +263,230 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction"><strong>Introduction:</strong></h2>
-<p>Describe the problem you’re solving and why it matters</p>
+<p>Have you ever been given a dataset and quickly found it to so messy you couldn’t even analyzy it? We’ll be examining how to use the Pandas package in Python to tackle and wrangle a dataset.</p>
+<section id="imagine-you-have-this-data-here" class="level3">
+<h3 class="anchored" data-anchor-id="imagine-you-have-this-data-here">Imagine you have this data here:</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 14%">
+<col style="width: 8%">
+<col style="width: 19%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>StudentName</th>
+<th>Major</th>
+<th>GradYear</th>
+<th>GPA</th>
+<th>Internship?</th>
+<th>HoursWorked</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Alice Smith</td>
+<td>statistics</td>
+<td>2026</td>
+<td>3.8</td>
+<td>Yes</td>
+<td>12</td>
+</tr>
+<tr class="even">
+<td>bob jones</td>
+<td>Data Sci</td>
+<td>2025</td>
+<td>3.45</td>
+<td>yes</td>
+<td>15</td>
+</tr>
+<tr class="odd">
+<td>CAROL LEE</td>
+<td>STATISTICS</td>
+<td>2026</td>
+<td>NaN</td>
+<td>No</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>David Kim</td>
+<td>data science</td>
+<td>2024</td>
+<td>3.92</td>
+<td>No</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td>Eva Brown</td>
+<td>Stats</td>
+<td>2025</td>
+<td>3.6</td>
+<td>YES</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Notice the inconsistencies in the varying cell values. What can you see right away that could pose problems? ### Here are the issues that need fixing:</li>
+<li>Inconsistent capitalization</li>
+<li>Column names that don’t follow “snake_case”</li>
+<li>Mixed Boolean values (Yes, YES, yes)</li>
+<li>Missing values</li>
+<li>Abbreviated Categories</li>
+<li>A column we might remove later</li>
+</ul>
 </section>
-<section id="body" class="level2">
-<h2 class="anchored" data-anchor-id="body"><strong>Body:</strong></h2>
-<p>Step-by-step explanations, examples, and demonstractions</p>
+</section>
+<section id="pattern-overview" class="level2">
+<h2 class="anchored" data-anchor-id="pattern-overview">Pattern Overview:</h2>
+<ol type="1">
+<li>Standardize column names</li>
+<li>Fix capitalization inconsistencies</li>
+<li>Convert data types</li>
+<li>Remove unnecessary columns</li>
+<li>Handle missing values</li>
+<li>Add a clean index column</li>
+</ol>
+</section>
+<section id="hit-em-with-this" class="level2">
+<h2 class="anchored" data-anchor-id="hit-em-with-this"><strong>Hit ’em with this!</strong></h2>
+<section id="first-we-need-some-data" class="level3">
+<h3 class="anchored" data-anchor-id="first-we-need-some-data">First we need some data:</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Use pd.DataFrame()</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"StudentName"</span>: [<span class="st">"Alice Smith"</span>, <span class="st">"bob jones"</span>, <span class="st">"CAROL LEE"</span>, </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"David Kim"</span>, <span class="st">"Eva Brown"</span>],</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Major"</span>: [<span class="st">"statistics"</span>, <span class="st">"Data Sci"</span>, <span class="st">"STATISTICS"</span>, </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"data science"</span>, <span class="st">"Stats"</span>],</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"GradYear"</span>: [<span class="dv">2026</span>, <span class="dv">2025</span>, <span class="dv">2026</span>, <span class="dv">2024</span>, <span class="dv">2025</span>],</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"GPA"</span>: [<span class="fl">3.8</span>, <span class="fl">3.45</span>, <span class="va">None</span>, <span class="fl">3.92</span>, <span class="fl">3.6</span>],</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Internship?"</span>: [<span class="st">"Yes"</span>, <span class="st">"yes"</span>, <span class="st">"No"</span>, <span class="st">"No"</span>, <span class="st">"YES"</span>],</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">"HoursWorked"</span>: [<span class="dv">12</span>, <span class="dv">15</span>, <span class="dv">8</span>, <span class="va">None</span>, <span class="dv">20</span>]</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="step-1-clean-up-the-column-names" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-clean-up-the-column-names">Step 1: Clean up the Column Names</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the Pandas '.rename()' method</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.rename(columns<span class="op">=</span>{</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"StudentName"</span>: <span class="st">"student_name"</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Major"</span>: <span class="st">"major"</span>,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"GradYear"</span>: <span class="st">"grad_year"</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"GPA"</span>: <span class="st">"gpa"</span>,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Internship?"</span>: <span class="st">"internship"</span>,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"HoursWorked"</span>: <span class="st">"hours_worked"</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="step-2-standardize-text-values" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-standardize-text-values">Step 2: Standardize Text Values</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use 'str.title()', 'str.lower()' to standardize:</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"student_name"</span>] <span class="op">=</span> df[<span class="st">"student_name"</span>].<span class="bu">str</span>.title()</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"major"</span>] <span class="op">=</span> df[<span class="st">"major"</span>].<span class="bu">str</span>.lower()</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"internship"</span>] <span class="op">=</span> df[<span class="st">"internship"</span>].<span class="bu">str</span>.lower()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="step-2a-standardize-majors" class="level3">
+<h3 class="anchored" data-anchor-id="step-2a-standardize-majors">Step 2a: Standardize Majors</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pandas '.replace()' method is great here, just put the column name in the [] brackets and add the current name before the colon ":" with the desired new value after the colon ":".</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"major"</span>] <span class="op">=</span> df[<span class="st">"major"</span>].replace({</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"data sci"</span>: <span class="st">"data science"</span>,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"stats"</span>: <span class="st">"statistics"</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="step-3-convert-data-types" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-convert-data-types">Step 3: Convert Data Types</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># We're going to remap how we display whether students completed an internship to the established standard:</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"internship"</span>] <span class="op">=</span> df[<span class="st">"internship"</span>].<span class="bu">map</span>({</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"yes"</span>: <span class="va">True</span>,</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"no"</span>: <span class="va">False</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Fun Fact: Boolean values are very versatile and can be utilized in other functions without having to encode 'yes' and 'no' into queries.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Next, we specify graduation year as integers:</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"grad_year"</span>] <span class="op">=</span> df[<span class="st">"grad_year"</span>].astype(<span class="bu">int</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="step-4-handle-missing-values" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-handle-missing-values">Step 4: Handle Missing Values</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Drop rows where GPA is missing:</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co">#   **We do this for datasets that are large enough to afford a few missing observations for other columns.**</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.dropna(subset<span class="op">=</span>[<span class="st">"gpa"</span>])</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># In other cases, we can translate missing values to a something more useful, like hours worked:</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"hours_worked"</span>] <span class="op">=</span> df[<span class="st">"hours_worked"</span>].fillna(<span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="step-5-remove-unnecessary-columns" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-remove-unnecessary-columns">Step 5: Remove Unnecessary Columns</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># OR: If we decide the whole column isn't useful, we can drop it:</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.drop(columns<span class="op">=</span>[<span class="st">"hours_worked"</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="step-6-add-a-clean-index-column" class="level3">
+<h3 class="anchored" data-anchor-id="step-6-add-a-clean-index-column">Step 6: Add a Clean Index Column;</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># If some of our analyses require tracking each row, it can be useful if their indices are displayed as their own column:</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.reset_index(drop<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>df.insert(<span class="dv">0</span>, <span class="st">"student_id"</span>, <span class="bu">range</span>(<span class="dv">1</span>, <span class="bu">len</span>(df) <span class="op">+</span> <span class="dv">1</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="your-final-table-should-look-something-like-this" class="level2">
+<h2 class="anchored" data-anchor-id="your-final-table-should-look-something-like-this">Your Final Table Should Look Something Like This:</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>student_id</th>
+<th>student_name</th>
+<th>major</th>
+<th>grad_year</th>
+<th>gpa</th>
+<th>internship</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Alice Smith</td>
+<td>statistics</td>
+<td>2026</td>
+<td>3.8</td>
+<td>True</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Bob Jones</td>
+<td>data science</td>
+<td>2025</td>
+<td>3.45</td>
+<td>True</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>David Kim</td>
+<td>data science</td>
+<td>2024</td>
+<td>3.92</td>
+<td>False</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Eva Brown</td>
+<td>statistics</td>
+<td>2025</td>
+<td>3.6</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="conclusion-and-call-to-action" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion-and-call-to-action"><strong>Conclusion and Call to Action</strong></h2>
-<p>Summarize the key ideas and tell the reader what to do next. Examples: - Try the code on their own data - Apply the workflow to a new example - Explore a related tool or extension</p>
+<p>Try applying this 6-step workflow to your own messy CSV file. What patterns repeat? What new cleaning rules do you need? Data cleaning is less about memorizing commands and more about building repeatable structure.</p>
+<p>Next time you open a messy dataset, try asking: 1. Are the column names consistent? 2. Are categories standardized? 3. Are data types correct? 4. What missing values matter?</p>
+<section id="thanks-for-joining-me-on-this-tutorial-check-back-regularly-for-more-coding-tips" class="level3">
+<h3 class="anchored" data-anchor-id="thanks-for-joining-me-on-this-tutorial-check-back-regularly-for-more-coding-tips">Thanks for joining me on this tutorial! Check back regularly for more coding tips!</h3>
 
 
 <!-- -->
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -695,22 +941,149 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> How to </span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## __Introduction:__</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Describe the problem you're solving and why it matters</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## __Body:__</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>Step-by-step explanations, examples, and demonstractions</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## __Conclusion and Call to Action__</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Summarize the key ideas and tell the reader what to do next.</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>Examples: </span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Try the code on their own data</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Apply the workflow to a new example</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Explore a related tool or extension</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Blog Tutorial"</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Jordan Evans"</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2026-02-20"</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> ["Data Science", "Quarto"]</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## __Introduction:__</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>Have you ever been given a dataset and quickly found it to so messy you couldn't even analyzy it? We'll be examining how to use the Pandas package in Python to tackle and wrangle a dataset.</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="fu">### Imagine you have this data here:</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> StudentName <span class="pp">|</span> Major       <span class="pp">|</span>GradYear  <span class="pp">|</span>GPA   <span class="pp">|</span>Internship?  <span class="pp">|</span>HoursWorked <span class="pp">|</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------------|-------------|----------|------|-------------|------------|</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Alice Smith <span class="pp">|</span> statistics  <span class="pp">|</span> 2026     <span class="pp">|</span> 3.8  <span class="pp">|</span> Yes         <span class="pp">|</span> 12         <span class="pp">|</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> bob jones   <span class="pp">|</span> Data Sci    <span class="pp">|</span> 2025     <span class="pp">|</span> 3.45 <span class="pp">|</span> yes         <span class="pp">|</span> 15         <span class="pp">|</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> CAROL LEE   <span class="pp">|</span> STATISTICS  <span class="pp">|</span> 2026     <span class="pp">|</span> NaN  <span class="pp">|</span> No          <span class="pp">|</span> 8          <span class="pp">|</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> David Kim   <span class="pp">|</span> data science<span class="pp">|</span> 2024     <span class="pp">|</span> 3.92 <span class="pp">|</span> No          <span class="pp">|</span> NaN        <span class="pp">|</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Eva Brown   <span class="pp">|</span> Stats       <span class="pp">|</span> 2025     <span class="pp">|</span> 3.6  <span class="pp">|</span> YES         <span class="pp">|</span> 20         <span class="pp">|</span></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Notice the inconsistencies in the varying cell values. What can you see right away that could pose problems? </span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a><span class="fu">### Here are the issues that need fixing:</span></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Inconsistent capitalization</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Column names that don't follow "snake_case"</span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Mixed Boolean values (Yes, YES, yes)</span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Missing values</span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Abbreviated Categories</span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A column we might remove later</span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pattern Overview:</span></span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Standardize column names</span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Fix capitalization inconsistencies</span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Convert data types</span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Remove unnecessary columns</span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Handle missing values</span>
+<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>Add a clean index column</span>
+<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a><span class="fu">## __Hit 'em with this!__</span></span>
+<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a><span class="fu">### First we need some data:</span></span>
+<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a><span class="co"># Use pd.DataFrame()</span></span>
+<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb10-44"><a href="#cb10-44" aria-hidden="true" tabindex="-1"></a>    <span class="st">"StudentName"</span>: [<span class="st">"Alice Smith"</span>, <span class="st">"bob jones"</span>, <span class="st">"CAROL LEE"</span>, </span>
+<span id="cb10-45"><a href="#cb10-45" aria-hidden="true" tabindex="-1"></a>    <span class="st">"David Kim"</span>, <span class="st">"Eva Brown"</span>],</span>
+<span id="cb10-46"><a href="#cb10-46" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Major"</span>: [<span class="st">"statistics"</span>, <span class="st">"Data Sci"</span>, <span class="st">"STATISTICS"</span>, </span>
+<span id="cb10-47"><a href="#cb10-47" aria-hidden="true" tabindex="-1"></a>    <span class="st">"data science"</span>, <span class="st">"Stats"</span>],</span>
+<span id="cb10-48"><a href="#cb10-48" aria-hidden="true" tabindex="-1"></a>    <span class="st">"GradYear"</span>: [<span class="dv">2026</span>, <span class="dv">2025</span>, <span class="dv">2026</span>, <span class="dv">2024</span>, <span class="dv">2025</span>],</span>
+<span id="cb10-49"><a href="#cb10-49" aria-hidden="true" tabindex="-1"></a>    <span class="st">"GPA"</span>: [<span class="fl">3.8</span>, <span class="fl">3.45</span>, <span class="va">None</span>, <span class="fl">3.92</span>, <span class="fl">3.6</span>],</span>
+<span id="cb10-50"><a href="#cb10-50" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Internship?"</span>: [<span class="st">"Yes"</span>, <span class="st">"yes"</span>, <span class="st">"No"</span>, <span class="st">"No"</span>, <span class="st">"YES"</span>],</span>
+<span id="cb10-51"><a href="#cb10-51" aria-hidden="true" tabindex="-1"></a>    <span class="st">"HoursWorked"</span>: [<span class="dv">12</span>, <span class="dv">15</span>, <span class="dv">8</span>, <span class="va">None</span>, <span class="dv">20</span>]</span>
+<span id="cb10-52"><a href="#cb10-52" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb10-53"><a href="#cb10-53" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-54"><a href="#cb10-54" aria-hidden="true" tabindex="-1"></a><span class="fu">### Step 1: Clean up the Column Names</span></span>
+<span id="cb10-55"><a href="#cb10-55" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb10-56"><a href="#cb10-56" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the Pandas '.rename()' method</span></span>
+<span id="cb10-57"><a href="#cb10-57" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.rename(columns<span class="op">=</span>{</span>
+<span id="cb10-58"><a href="#cb10-58" aria-hidden="true" tabindex="-1"></a>    <span class="st">"StudentName"</span>: <span class="st">"student_name"</span>,</span>
+<span id="cb10-59"><a href="#cb10-59" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Major"</span>: <span class="st">"major"</span>,</span>
+<span id="cb10-60"><a href="#cb10-60" aria-hidden="true" tabindex="-1"></a>    <span class="st">"GradYear"</span>: <span class="st">"grad_year"</span>,</span>
+<span id="cb10-61"><a href="#cb10-61" aria-hidden="true" tabindex="-1"></a>    <span class="st">"GPA"</span>: <span class="st">"gpa"</span>,</span>
+<span id="cb10-62"><a href="#cb10-62" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Internship?"</span>: <span class="st">"internship"</span>,</span>
+<span id="cb10-63"><a href="#cb10-63" aria-hidden="true" tabindex="-1"></a>    <span class="st">"HoursWorked"</span>: <span class="st">"hours_worked"</span></span>
+<span id="cb10-64"><a href="#cb10-64" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb10-65"><a href="#cb10-65" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-66"><a href="#cb10-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-67"><a href="#cb10-67" aria-hidden="true" tabindex="-1"></a><span class="fu">### Step 2: Standardize Text Values</span></span>
+<span id="cb10-68"><a href="#cb10-68" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb10-69"><a href="#cb10-69" aria-hidden="true" tabindex="-1"></a><span class="co"># Use 'str.title()', 'str.lower()' to standardize:</span></span>
+<span id="cb10-70"><a href="#cb10-70" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"student_name"</span>] <span class="op">=</span> df[<span class="st">"student_name"</span>].<span class="bu">str</span>.title()</span>
+<span id="cb10-71"><a href="#cb10-71" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"major"</span>] <span class="op">=</span> df[<span class="st">"major"</span>].<span class="bu">str</span>.lower()</span>
+<span id="cb10-72"><a href="#cb10-72" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"internship"</span>] <span class="op">=</span> df[<span class="st">"internship"</span>].<span class="bu">str</span>.lower()</span>
+<span id="cb10-73"><a href="#cb10-73" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-74"><a href="#cb10-74" aria-hidden="true" tabindex="-1"></a><span class="fu">### Step 2a: Standardize Majors</span></span>
+<span id="cb10-75"><a href="#cb10-75" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb10-76"><a href="#cb10-76" aria-hidden="true" tabindex="-1"></a><span class="co"># Pandas '.replace()' method is great here, just put the column name in the [] brackets and add the current name before the colon ":" with the desired new value after the colon ":".</span></span>
+<span id="cb10-77"><a href="#cb10-77" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"major"</span>] <span class="op">=</span> df[<span class="st">"major"</span>].replace({</span>
+<span id="cb10-78"><a href="#cb10-78" aria-hidden="true" tabindex="-1"></a>    <span class="st">"data sci"</span>: <span class="st">"data science"</span>,</span>
+<span id="cb10-79"><a href="#cb10-79" aria-hidden="true" tabindex="-1"></a>    <span class="st">"stats"</span>: <span class="st">"statistics"</span></span>
+<span id="cb10-80"><a href="#cb10-80" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb10-81"><a href="#cb10-81" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-82"><a href="#cb10-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-83"><a href="#cb10-83" aria-hidden="true" tabindex="-1"></a><span class="fu">### Step 3: Convert Data Types</span></span>
+<span id="cb10-84"><a href="#cb10-84" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb10-85"><a href="#cb10-85" aria-hidden="true" tabindex="-1"></a><span class="co"># We're going to remap how we display whether students completed an internship to the established standard:</span></span>
+<span id="cb10-86"><a href="#cb10-86" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"internship"</span>] <span class="op">=</span> df[<span class="st">"internship"</span>].<span class="bu">map</span>({</span>
+<span id="cb10-87"><a href="#cb10-87" aria-hidden="true" tabindex="-1"></a>    <span class="st">"yes"</span>: <span class="va">True</span>,</span>
+<span id="cb10-88"><a href="#cb10-88" aria-hidden="true" tabindex="-1"></a>    <span class="st">"no"</span>: <span class="va">False</span></span>
+<span id="cb10-89"><a href="#cb10-89" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb10-90"><a href="#cb10-90" aria-hidden="true" tabindex="-1"></a><span class="co"># Fun Fact: Boolean values are very versatile and can be utilized in other functions without having to encode 'yes' and 'no' into queries.</span></span>
+<span id="cb10-91"><a href="#cb10-91" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-92"><a href="#cb10-92" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb10-93"><a href="#cb10-93" aria-hidden="true" tabindex="-1"></a><span class="co"># Next, we specify graduation year as integers:</span></span>
+<span id="cb10-94"><a href="#cb10-94" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"grad_year"</span>] <span class="op">=</span> df[<span class="st">"grad_year"</span>].astype(<span class="bu">int</span>)</span>
+<span id="cb10-95"><a href="#cb10-95" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-96"><a href="#cb10-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-97"><a href="#cb10-97" aria-hidden="true" tabindex="-1"></a><span class="fu">### Step 4: Handle Missing Values</span></span>
+<span id="cb10-98"><a href="#cb10-98" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb10-99"><a href="#cb10-99" aria-hidden="true" tabindex="-1"></a><span class="co"># Drop rows where GPA is missing:</span></span>
+<span id="cb10-100"><a href="#cb10-100" aria-hidden="true" tabindex="-1"></a><span class="co">#   **We do this for datasets that are large enough to afford a few missing observations for other columns.**</span></span>
+<span id="cb10-101"><a href="#cb10-101" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.dropna(subset<span class="op">=</span>[<span class="st">"gpa"</span>])</span>
+<span id="cb10-102"><a href="#cb10-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-103"><a href="#cb10-103" aria-hidden="true" tabindex="-1"></a><span class="co"># In other cases, we can translate missing values to a something more useful, like hours worked:</span></span>
+<span id="cb10-104"><a href="#cb10-104" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"hours_worked"</span>] <span class="op">=</span> df[<span class="st">"hours_worked"</span>].fillna(<span class="dv">0</span>)</span>
+<span id="cb10-105"><a href="#cb10-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-106"><a href="#cb10-106" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-107"><a href="#cb10-107" aria-hidden="true" tabindex="-1"></a><span class="fu">### Step 5: Remove Unnecessary Columns</span></span>
+<span id="cb10-108"><a href="#cb10-108" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb10-109"><a href="#cb10-109" aria-hidden="true" tabindex="-1"></a><span class="co"># OR: If we decide the whole column isn't useful, we can drop it:</span></span>
+<span id="cb10-110"><a href="#cb10-110" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.drop(columns<span class="op">=</span>[<span class="st">"hours_worked"</span>])</span>
+<span id="cb10-111"><a href="#cb10-111" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-112"><a href="#cb10-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-113"><a href="#cb10-113" aria-hidden="true" tabindex="-1"></a><span class="fu">### Step 6: Add a Clean Index Column;</span></span>
+<span id="cb10-114"><a href="#cb10-114" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb10-115"><a href="#cb10-115" aria-hidden="true" tabindex="-1"></a><span class="co"># If some of our analyses require tracking each row, it can be useful if their indices are displayed as their own column:</span></span>
+<span id="cb10-116"><a href="#cb10-116" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.reset_index(drop<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb10-117"><a href="#cb10-117" aria-hidden="true" tabindex="-1"></a>df.insert(<span class="dv">0</span>, <span class="st">"student_id"</span>, <span class="bu">range</span>(<span class="dv">1</span>, <span class="bu">len</span>(df) <span class="op">+</span> <span class="dv">1</span>))</span>
+<span id="cb10-118"><a href="#cb10-118" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-119"><a href="#cb10-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-120"><a href="#cb10-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-121"><a href="#cb10-121" aria-hidden="true" tabindex="-1"></a><span class="fu">## Your Final Table Should Look Something Like This:</span></span>
+<span id="cb10-122"><a href="#cb10-122" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> student_id <span class="pp">|</span>student_name <span class="pp">|</span> major       <span class="pp">|</span> grad_year<span class="pp">|</span> gpa  <span class="pp">|</span>internship <span class="pp">|</span></span>
+<span id="cb10-123"><a href="#cb10-123" aria-hidden="true" tabindex="-1"></a><span class="pp">|------------|-------------|-------------|----------|------|-----------|</span></span>
+<span id="cb10-124"><a href="#cb10-124" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 1          <span class="pp">|</span> Alice Smith <span class="pp">|</span> statistics  <span class="pp">|</span> 2026     <span class="pp">|</span> 3.8  <span class="pp">|</span> True      <span class="pp">|</span></span>
+<span id="cb10-125"><a href="#cb10-125" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 2          <span class="pp">|</span> Bob Jones   <span class="pp">|</span> data science<span class="pp">|</span> 2025     <span class="pp">|</span> 3.45 <span class="pp">|</span> True      <span class="pp">|</span></span>
+<span id="cb10-126"><a href="#cb10-126" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 3          <span class="pp">|</span> David Kim   <span class="pp">|</span> data science<span class="pp">|</span> 2024     <span class="pp">|</span> 3.92 <span class="pp">|</span> False     <span class="pp">|</span></span>
+<span id="cb10-127"><a href="#cb10-127" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 4          <span class="pp">|</span> Eva Brown   <span class="pp">|</span> statistics  <span class="pp">|</span> 2025     <span class="pp">|</span> 3.6  <span class="pp">|</span> True      <span class="pp">|</span></span>
+<span id="cb10-128"><a href="#cb10-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-129"><a href="#cb10-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-130"><a href="#cb10-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-131"><a href="#cb10-131" aria-hidden="true" tabindex="-1"></a><span class="fu">## __Conclusion and Call to Action__</span></span>
+<span id="cb10-132"><a href="#cb10-132" aria-hidden="true" tabindex="-1"></a>Try applying this 6-step workflow to your own messy CSV file.</span>
+<span id="cb10-133"><a href="#cb10-133" aria-hidden="true" tabindex="-1"></a>What patterns repeat? What new cleaning rules do you need?</span>
+<span id="cb10-134"><a href="#cb10-134" aria-hidden="true" tabindex="-1"></a>Data cleaning is less about memorizing commands and more about building repeatable structure.</span>
+<span id="cb10-135"><a href="#cb10-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-136"><a href="#cb10-136" aria-hidden="true" tabindex="-1"></a>Next time you open a messy dataset, try asking:</span>
+<span id="cb10-137"><a href="#cb10-137" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Are the column names consistent?</span>
+<span id="cb10-138"><a href="#cb10-138" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Are categories standardized?</span>
+<span id="cb10-139"><a href="#cb10-139" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Are data types correct?</span>
+<span id="cb10-140"><a href="#cb10-140" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>What missing values matter?</span>
+<span id="cb10-141"><a href="#cb10-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-142"><a href="#cb10-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-143"><a href="#cb10-143" aria-hidden="true" tabindex="-1"></a><span class="fu">### Thanks for joining me on this tutorial! Check back regularly for more coding tips!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
