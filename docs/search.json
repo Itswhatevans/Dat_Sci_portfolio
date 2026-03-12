@@ -58,27 +58,6 @@
     "text": "Learn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
-    "section": "",
-    "text": "Excited to be part of the growing data science and machine learning fields, I combine my technology skills with my interpersonal skills to bring meaningful analyses and insights out of big data.\nYears of experience and training in the field of door-to-door Sales and Network Marketing gave me the skills and attributes necessary to cultivate quality client relations, communicate clearly, and bring optimism and positivity to my workplace. I consistently strive toward self improvement and can apply my intellect and ethic to any task. It is said that 90% of workplaces desire sales skills/sales experience, but less than 10% of workers possess those skills.\nStatistics major, Data Science Emphasis, Senior, interest in Machine Learning, Neural Networks, creative business solutions, agentic AI.\n\n\n\n\nBrigham Young University\nBachelor’s of Applied Science, Statistics\nApril, 2026\n\n\n\n\n\nData Analyst, TELUS International AI Data Solutions.\n\nAnalysts for TELUS International assist in training AI. A specific rating system is given for analysts to apply to various queries and usage cases. Combining responsibilities for discerning best ratings with adhesion to high quality standards, analysts must process queries to make the AI more accurate and useful.\n\n\n\n\nAssessment Team, Office of Belonging, BYU - Working in tools like MAXQDA, Excel, Power BI, and R, analyzed non-ordinal and unstructured survey data to extract insight from focus groups and student demographics, improving outreach and furthering the mission of the office.\n\n\n\nWhat affects NBA draft chances? - Group Research Project, Fall 2024 - Experimental Design, Data Wrangling, Statistical Modeling - Used R (Tidyverse, ggplot2) and NCAA basketball APIs to collect and clean collegiate athlete data - Built hybrid multiple regression model to identify predictive draft factors; found player position had more impact than traditionally valued statistics (e.g., PPG or RPG) - Co-led data visualization and storytelling for final team presentation\nDo Wash Cycles affect clothing shrinkage? - Group Research Project, Winter 2024 - Experiment Design, Collection of Data, Statistical Modeling - Designed and conducted a controlled experiment with 3 fabric types across different wash cycles - Analyzed shrinkage patterns using R and Tableau; visualized trends and presented findings in class - Demonstrated measurable though impact of wash cycle settings on shrinkage, even with pre-shrunk fabrics\n\n\n\n\n\n\n\nR, Python, SQL, HTML/CSS, C++, VBA\n\n\n\n\n\nNumPy, Pandas, Sci-Kit Learn, Tidyverse, NoSQL, Linux, Tableau, Power BI, MAXQDA, Excel\n\n\n\n\n\nData wrangling, data visualization, statistical analysis, multiple regression, linear models, logistic regression, machine learning, linear algebra, hypothesis testing, agentic AI\n\n\n\n\n\n\nData Pipelines\nAutoML\nMachine Learning Algorithms\nData Visualization\nMultiple Regression Analysis\n\n\n\n\nDescribe what you hope to achieve through your data science journey:\n\nShort term:\n\nImproved, robust project portfolio, proof of concept for job marketability\n\nLong-term career aspirations\n\nExpertise in AutoML, Agentic AI, ML algorithms\n\nTypes of problems I want to solve\n\nPredictive analytics, Geospacial data analysis, Time series analysis.\n\n\n\n\n\n\nEmail: jtevans9@byu.edu\nGitHub: https://github.com/Itswhatevans\nLinkedIn: https://linkedin.com/in/jordantevans\n\n\n\nHobbies - Disc golf - Social dance - Video games\nInterests - Music - Movies - Language - Planes/aeronautics - Astronomy\nFun Facts - Met my wife the same way her parents met: On the Ballroom Dance Touring company at BYU - Youngest of six kids - I was admitted to BYU three times\n\n\n\n\n\n\nHeadshot"
-  },
-  {
-    "objectID": "about.html#goals",
-    "href": "about.html#goals",
-    "title": "About Me",
-    "section": "",
-    "text": "Describe what you hope to achieve through your data science journey:\n\nShort term:\n\nImproved, robust project portfolio, proof of concept for job marketability\n\nLong-term career aspirations\n\nExpertise in AutoML, Agentic AI, ML algorithms\n\nTypes of problems I want to solve\n\nPredictive analytics, Geospacial data analysis, Time series analysis."
-  },
-  {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
-    "title": "About Me",
-    "section": "",
-    "text": "Email: jtevans9@byu.edu\nGitHub: https://github.com/Itswhatevans\nLinkedIn: https://linkedin.com/in/jordantevans\n\n\n\nHobbies - Disc golf - Social dance - Video games\nInterests - Music - Movies - Language - Planes/aeronautics - Astronomy\nFun Facts - Met my wife the same way her parents met: On the Ballroom Dance Touring company at BYU - Youngest of six kids - I was admitted to BYU three times\n\n\n\n\n\n\nHeadshot"
-  },
-  {
     "objectID": "blogs/blog-tutorial.html",
     "href": "blogs/blog-tutorial.html",
     "title": "Blog Tutorial",
@@ -119,6 +98,83 @@
     "title": "Blog Tutorial",
     "section": "Conclusion and Call to Action",
     "text": "Conclusion and Call to Action\nTry applying this 6-step workflow to your own messy CSV file. What patterns repeat? What new cleaning rules do you need? Data cleaning is less about memorizing commands and more about building repeatable structure.\nNext time you open a messy dataset, try asking: 1. Are the column names consistent? 2. Are categories standardized? 3. Are data types correct? 4. What missing values matter?\n\nThanks for joining me on this tutorial! Check back regularly for more coding tips!"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Excited to be part of the growing data science and machine learning fields, I combine my technology skills with my interpersonal skills to bring meaningful analyses and insights out of big data.\nYears of experience and training in the field of door-to-door Sales and Network Marketing gave me the skills and attributes necessary to cultivate quality client relations, communicate clearly, and bring optimism and positivity to my workplace. I consistently strive toward self improvement and can apply my intellect and ethic to any task. It is said that 90% of workplaces desire sales skills/sales experience, but less than 10% of workers possess those skills.\nStatistics major, Data Science Emphasis, Senior, interest in Machine Learning, Neural Networks, creative business solutions, agentic AI.\n\n\n\n\nBrigham Young University\nBachelor’s of Applied Science, Statistics\nApril, 2026\n\n\n\n\n\nData Analyst, TELUS International AI Data Solutions.\n\nAnalysts for TELUS International assist in training AI. A specific rating system is given for analysts to apply to various queries and usage cases. Combining responsibilities for discerning best ratings with adhesion to high quality standards, analysts must process queries to make the AI more accurate and useful.\n\n\n\n\nAssessment Team, Office of Belonging, BYU - Working in tools like MAXQDA, Excel, Power BI, and R, analyzed non-ordinal and unstructured survey data to extract insight from focus groups and student demographics, improving outreach and furthering the mission of the office.\n\n\n\nWhat affects NBA draft chances? - Group Research Project, Fall 2024 - Experimental Design, Data Wrangling, Statistical Modeling - Used R (Tidyverse, ggplot2) and NCAA basketball APIs to collect and clean collegiate athlete data - Built hybrid multiple regression model to identify predictive draft factors; found player position had more impact than traditionally valued statistics (e.g., PPG or RPG) - Co-led data visualization and storytelling for final team presentation\nDo Wash Cycles affect clothing shrinkage? - Group Research Project, Winter 2024 - Experiment Design, Collection of Data, Statistical Modeling - Designed and conducted a controlled experiment with 3 fabric types across different wash cycles - Analyzed shrinkage patterns using R and Tableau; visualized trends and presented findings in class - Demonstrated measurable though impact of wash cycle settings on shrinkage, even with pre-shrunk fabrics\n\n\n\n\n\n\n\nR, Python, SQL, HTML/CSS, C++, VBA\n\n\n\n\n\nNumPy, Pandas, Sci-Kit Learn, Tidyverse, NoSQL, Linux, Tableau, Power BI, MAXQDA, Excel\n\n\n\n\n\nData wrangling, data visualization, statistical analysis, multiple regression, linear models, logistic regression, machine learning, linear algebra, hypothesis testing, agentic AI\n\n\n\n\n\n\nData Pipelines\nAutoML\nMachine Learning Algorithms\nData Visualization\nMultiple Regression Analysis\n\n\n\n\nDescribe what you hope to achieve through your data science journey:\n\nShort term:\n\nImproved, robust project portfolio, proof of concept for job marketability\n\nLong-term career aspirations\n\nExpertise in AutoML, Agentic AI, ML algorithms\n\nTypes of problems I want to solve\n\nPredictive analytics, Geospacial data analysis, Time series analysis.\n\n\n\n\n\n\nEmail: jtevans9@byu.edu\nGitHub: https://github.com/Itswhatevans\nLinkedIn: https://linkedin.com/in/jordantevans\n\n\n\nHobbies - Disc golf - Social dance - Video games\nInterests - Music - Movies - Language - Planes/aeronautics - Astronomy\nFun Facts - Met my wife the same way her parents met: On the Ballroom Dance Touring company at BYU - Youngest of six kids - I was admitted to BYU three times\n\n\n\n\n\n\nHeadshot"
+  },
+  {
+    "objectID": "about.html#goals",
+    "href": "about.html#goals",
+    "title": "About Me",
+    "section": "",
+    "text": "Describe what you hope to achieve through your data science journey:\n\nShort term:\n\nImproved, robust project portfolio, proof of concept for job marketability\n\nLong-term career aspirations\n\nExpertise in AutoML, Agentic AI, ML algorithms\n\nTypes of problems I want to solve\n\nPredictive analytics, Geospacial data analysis, Time series analysis."
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About Me",
+    "section": "",
+    "text": "Email: jtevans9@byu.edu\nGitHub: https://github.com/Itswhatevans\nLinkedIn: https://linkedin.com/in/jordantevans\n\n\n\nHobbies - Disc golf - Social dance - Video games\nInterests - Music - Movies - Language - Planes/aeronautics - Astronomy\nFun Facts - Met my wife the same way her parents met: On the Ballroom Dance Touring company at BYU - Youngest of six kids - I was admitted to BYU three times\n\n\n\n\n\n\nHeadshot"
+  },
+  {
+    "objectID": "blogs/scraping-tutorial.html",
+    "href": "blogs/scraping-tutorial.html",
+    "title": "Web Scraping Blog",
+    "section": "",
+    "text": "Rocket launches have fascinated engineers and data scientists for decades. With the rise of commercial spaceflight, the number and frequency of launches have changed dramatically. This project demonstrates how to gather, clean, and explore rocket launch data using publicly available APIs, while teaching others how to replicate the process.\n\n\n\nHow has global rocket launch activity changed over time?\nWe explore trends from the early space race (1957–1969) to the modern commercial era (2015–2019).\n\n\n\nData were collected from the Launch Library API, which is publicly accessible for educational use. We took care to:\n\nRespect API rate limits and throttling\nInclude a User-Agent in requests\nAvoid storing private keys\n\nThis ensures ethical and responsible data scraping.\n\n\n\n\nPull rocket launch data in two periods:\n\nEarly space race (1957–1969)\nModern commercial era (2015–2019)\n\nUse Python requests to access the API and handle pagination.\nPause between requests to avoid throttling.\nSave each dataset as CSV.\nClean data in Python:\n\nSee breakdown below under “Data Cleaning & Tranformations”\n\nCombine the two datasets for analysis.\n\n\n\n\n\nTotal observations: 1000 launches\n\nFeatures: 10 columns\n\nSource: Launch Library API\n\nCode repository: My Webscraping Repo\n\n\n\n\n\n\nVariable\nDescription\n\n\n\n\nrocket_family\nLaunch vehicle designation (e.g., Falcon 9)\n\n\nmission\nPayload or mission name (e.g., Starlink 6-15)\n\n\nrocket\nRocket configuration (full rocket model name)\n\n\nprovider\nLaunch service provider or organization\n\n\nlaunch_date\nLaunch date and time (UTC)\n\n\nyear\nYear of launch (numeric)\n\n\nlaunch_site\nLaunch pad or complex\n\n\nlocation\nGeographic location of launch site\n\n\nstatus\nLaunch outcome (e.g., Launch Successful, Launch Failure)\n\n\n\n\n\n\n\nSplit name into rocket_family and mission using Python string methods\nStandardized whitespace and capitalization\nConverted launch_date to datetime and extracted year\nConverted improper launch_site entries, which were not interpretable, to NaN.\n\nTotaling 151 observations.\nSince launch_site is an unessential variable, we won’t worry about the NaN values\n\nDropped redundant columns for clarity\n\n\n\n\n\nSome missions may have missing or ambiguous names\nEarly data may have inconsistent formatting for provider or rocket\nStatus labels are standardized, but historical reports may be incomplete\nThe dataset does not include every launch worldwide — only those recorded in the API\n\n\n\n\n\n\nLaunches per year show a clear increase in the modern era compared to the early space race.\nTop providers include SpaceX, NASA, Soviet Space Program, and US Navy.\nLaunch success rate trends can be visualized using the status column.\n\n\n\n\n\nLaunch Library API Documentation\nSpaceX Launch Manifest\nNASA Launch Schedule"
+  },
+  {
+    "objectID": "blogs/scraping-tutorial.html#introduction-motivation",
+    "href": "blogs/scraping-tutorial.html#introduction-motivation",
+    "title": "Web Scraping Blog",
+    "section": "",
+    "text": "Rocket launches have fascinated engineers and data scientists for decades. With the rise of commercial spaceflight, the number and frequency of launches have changed dramatically. This project demonstrates how to gather, clean, and explore rocket launch data using publicly available APIs, while teaching others how to replicate the process."
+  },
+  {
+    "objectID": "blogs/scraping-tutorial.html#motivating-question",
+    "href": "blogs/scraping-tutorial.html#motivating-question",
+    "title": "Web Scraping Blog",
+    "section": "",
+    "text": "How has global rocket launch activity changed over time?\nWe explore trends from the early space race (1957–1969) to the modern commercial era (2015–2019)."
+  },
+  {
+    "objectID": "blogs/scraping-tutorial.html#ethics-and-api-usage",
+    "href": "blogs/scraping-tutorial.html#ethics-and-api-usage",
+    "title": "Web Scraping Blog",
+    "section": "",
+    "text": "Data were collected from the Launch Library API, which is publicly accessible for educational use. We took care to:\n\nRespect API rate limits and throttling\nInclude a User-Agent in requests\nAvoid storing private keys\n\nThis ensures ethical and responsible data scraping."
+  },
+  {
+    "objectID": "blogs/scraping-tutorial.html#steps-to-gather-the-data",
+    "href": "blogs/scraping-tutorial.html#steps-to-gather-the-data",
+    "title": "Web Scraping Blog",
+    "section": "",
+    "text": "Pull rocket launch data in two periods:\n\nEarly space race (1957–1969)\nModern commercial era (2015–2019)\n\nUse Python requests to access the API and handle pagination.\nPause between requests to avoid throttling.\nSave each dataset as CSV.\nClean data in Python:\n\nSee breakdown below under “Data Cleaning & Tranformations”\n\nCombine the two datasets for analysis."
+  },
+  {
+    "objectID": "blogs/scraping-tutorial.html#final-dataset-overview",
+    "href": "blogs/scraping-tutorial.html#final-dataset-overview",
+    "title": "Web Scraping Blog",
+    "section": "",
+    "text": "Total observations: 1000 launches\n\nFeatures: 10 columns\n\nSource: Launch Library API\n\nCode repository: My Webscraping Repo\n\n\n\n\n\n\nVariable\nDescription\n\n\n\n\nrocket_family\nLaunch vehicle designation (e.g., Falcon 9)\n\n\nmission\nPayload or mission name (e.g., Starlink 6-15)\n\n\nrocket\nRocket configuration (full rocket model name)\n\n\nprovider\nLaunch service provider or organization\n\n\nlaunch_date\nLaunch date and time (UTC)\n\n\nyear\nYear of launch (numeric)\n\n\nlaunch_site\nLaunch pad or complex\n\n\nlocation\nGeographic location of launch site\n\n\nstatus\nLaunch outcome (e.g., Launch Successful, Launch Failure)\n\n\n\n\n\n\n\nSplit name into rocket_family and mission using Python string methods\nStandardized whitespace and capitalization\nConverted launch_date to datetime and extracted year\nConverted improper launch_site entries, which were not interpretable, to NaN.\n\nTotaling 151 observations.\nSince launch_site is an unessential variable, we won’t worry about the NaN values\n\nDropped redundant columns for clarity\n\n\n\n\n\nSome missions may have missing or ambiguous names\nEarly data may have inconsistent formatting for provider or rocket\nStatus labels are standardized, but historical reports may be incomplete\nThe dataset does not include every launch worldwide — only those recorded in the API"
+  },
+  {
+    "objectID": "blogs/scraping-tutorial.html#summary-statistics-example",
+    "href": "blogs/scraping-tutorial.html#summary-statistics-example",
+    "title": "Web Scraping Blog",
+    "section": "",
+    "text": "Launches per year show a clear increase in the modern era compared to the early space race.\nTop providers include SpaceX, NASA, Soviet Space Program, and US Navy.\nLaunch success rate trends can be visualized using the status column."
+  },
+  {
+    "objectID": "blogs/scraping-tutorial.html#further-resources",
+    "href": "blogs/scraping-tutorial.html#further-resources",
+    "title": "Web Scraping Blog",
+    "section": "",
+    "text": "Launch Library API Documentation\nSpaceX Launch Manifest\nNASA Launch Schedule"
   },
   {
     "objectID": "projects/data-acquisition.html",

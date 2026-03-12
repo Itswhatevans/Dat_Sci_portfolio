@@ -30,6 +30,8 @@ website:
         menu:
           - text: "Blog Tutorial"
             href: blogs/blog-tutorial.md
+          - text: "Rocket Launch Web Scraping"
+            href: blogs/scraping-tutorial.md
     right:
       - icon: github
         href: https://github.com/your-username
